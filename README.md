@@ -4,30 +4,30 @@ Exploração de heurísticas simples de recomendação utilizando **Pandas**, an
 
 ---
 
-## 📌 Sobre o Projeto
+## Projeto
 
 Este repositório contém um notebook introdutório onde exploro diferentes abordagens para criar um sistema de recomendação, indo do mais simples (baseado em contagem de votos) ao mais elaborado (similaridade entre usuários).
 O objetivo é entender a lógica por trás de modelos de recomendação antes de avançar para técnicas mais complexas como filtragem colaborativa ou modelos baseados em machine learning usando KNN.
 
 ---
 
-## 🧩 Conteúdo do Notebook
+## Notebook
 
-### 🔹 1. Heurística baseada no total de votos
+###  1. Heurística baseada no total de votos
 
 Primeira abordagem utilizando apenas **Pandas**:
 
 * Filmes/itens mais votados tendem a ser mais relevantes.
 * Simples, rápida e uma ótima linha de base (baseline).
 
-### 🔹 2. Nova heurística: Nota média + filtro de quantidade mínima de votos
+###  2. Nova heurística: Nota média + filtro de quantidade mínima de votos
 
 Melhoria da heurística anterior:
 
 * Considera a **qualidade** (média das avaliações);
 * Evita recomendações com poucos votos, aplicando um “filtro de confiança”.
 
-### 🔹 3. Procura por usuários "similares"
+###  3. Procura por usuários "similares"
 
 Introdução ao conceito de filtragem colaborativa:
 
@@ -39,7 +39,7 @@ Introdução ao conceito de filtragem colaborativa:
   * Maria deu nota 1 ao mesmo filme
   * Distância = |4 - 1| = 3
 
-### 🔹 4. Cálculo da distância entre usuários
+###  4. Cálculo da distância entre usuários
 
 * Utilização de métricas baseadas em diferenças de notas;
 * Étapa fundamental para prever gostos de um usuário a partir de outros com perfil semelhante.
@@ -70,7 +70,7 @@ Introdução ao conceito de filtragem colaborativa:
 
 ---
 
-## 📚 Objetivo Didático
+## Objetivo
 
 Este projeto foi criado com foco em **aprendizado prático** de sistemas de recomendação, servindo como base para:
 
